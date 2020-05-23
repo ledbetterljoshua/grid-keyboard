@@ -16,8 +16,8 @@ export const Keyboard = () => {
             {
               none,
               val,
-              col,
-              row,
+              col = 1,
+              row = 2,
               colStart = "auto",
               rowStart = "auto",
               classNames = ""
