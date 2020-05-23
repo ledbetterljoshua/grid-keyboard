@@ -21,9 +21,9 @@ export const Keyboard = () => {
   return (
     <div>
       <div className="pb-12">
-        {pressedKey
+        {pressedKey.val
           ? `you pressed "${pressedKey.val}" here is some info in it...........`
-          : "click on a key"}
+          : "click or press down on a key"}
       </div>
       <div className="grid grid-cols-8 grid-rows-10 gap-1">
         {keys.map((keyboardKey, ndx) => {
