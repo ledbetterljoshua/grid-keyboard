@@ -44,10 +44,10 @@ export const Keyboard = () => {
               autoFocus={active}
               onClick={() => setPressedKey(keyboardKey)}
               className={classnames(
-                `col-span-${col} row-span-${row} col-start-${colStart} row-start-${rowStart} hover:bg-gray-400 outline-none cursor-pointer px-1 py-2 md:p-4 flex justify-center items-center rounded-sm ${classNames}`,
+                `col-span-${col} row-span-${row} col-start-${colStart} row-start-${rowStart} hover:bg-gray-400 cursor-pointer px-1 py-2 md:p-4 flex justify-center items-center rounded-sm ${classNames}`,
                 {
                   "bg-gray-400 border border-blue-500 shadow-outline": active,
-                  "bg-gray-200 border border-gray-500": !active
+                  "bg-gray-200 border border-gray-500 focus:outline-none": !active
                 }
               )}
             >
