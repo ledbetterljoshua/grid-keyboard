@@ -28,7 +28,7 @@ export const Keyboard = () => {
               <div
                 key={ndx}
                 onClick={() => setPressedKey(val)}
-                className={`col-span-${col} row-span-${row} col-start-${colStart} row-start-${rowStart} bg-blue-300 border border-gray-700 p-4 flex justify-center items-center ${classNames}`}
+                className={`col-span-${col} row-span-${row} col-start-${colStart} row-start-${rowStart} bg-blue-300 hover:bg-blue-900 hover:text-white cursor-pointer border border-gray-700 p-4 flex justify-center items-center ${classNames}`}
               >
                 {val}
               </div>
